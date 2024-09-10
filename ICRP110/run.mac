@@ -1,0 +1,22 @@
+/run/initialize
+#/gps/verbose 2
+# Configura la sorgente di particelle
+#/gps/particle gamma
+#/gps/pos/type Point
+#/gps/pos/centre 0 0 -80.5 cm
+
+# Definisci la distribuzione di energia arbitraria
+#/gps/ene/type Gauss
+#/gps/ene/min 10 keV 
+#/gps/ene/max 140 keV 
+
+# Configura la distribuzione angolare isotropa
+#/gps/ang/type iso
+#/gps/ang/mintheta 0 deg
+#/gps/ang/maxtheta 16 deg
+#/gps/ang/minphi 0 deg
+#/gps/ang/maxphi 16 deg
+
+# Esegui il run con il numero specificato di eventi
+/run/beamOn 100000000
+
